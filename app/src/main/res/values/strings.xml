@@ -4,5 +4,19 @@
     <string name="HiTextNight">Good night!</string>
     <string name="Spb">Saint-Petersburg</string>
     <string name="Moscow">Moscow</string>
+    <string name="Day01">Monday</string>
+    <string name="Day02">Tuesday</string>
+    <string name="Day03">Wednesday</string>
+    <string name="Day04">Thursday</string>
+    <string name="Day05">Friday</string>
+    <string name="Day06">Saturday</string>
+    <string name="Day07">Sunday</string>
+    <string name="Temp01" translatable="false">+3</string>
+    <string name="Temp02" translatable="false">+5</string>
+    <string name="Temp03" translatable="false">+6</string>
+    <string name="Temp04" translatable="false">+7</string>
+    <string name="Temp05" translatable="false">+4</string>
+    <string name="Temp06" translatable="false">+1</string>
+    <string name="Temp07" translatable="false">-2</string>
     <string name="Temperature" translatable="false">+4</string>
 </resources>

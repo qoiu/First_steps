@@ -5,4 +5,11 @@
     <string name="HiTextNight">Спокойной ночи!</string>
     <string name="Spb">Санкт-Петербург</string>
     <string name="Moscow">Москва</string>
+    <string name="Day01">Понедельник</string>
+    <string name="Day02">Вторник</string>
+    <string name="Day03">Среда</string>
+    <string name="Day04">Четверг</string>
+    <string name="Day05">Пятница</string>
+    <string name="Day06">Суббота</string>
+    <string name="Day07">Воскресенье</string>
 </resources>
