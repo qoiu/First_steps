@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Первая программа</string>
+    <string name="HiText">Привет мир!</string>
+    <string name="HiTextNight">Спокойной ночи!</string>
+    <string name="Spb">Санкт-Петербург</string>
+    <string name="Moscow">Москва</string>
+</resources>
