@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">First_sts</string>
+    <string name="app_name">Weather App</string>
     <string name="HiText">Hello World!</string>
     <string name="HiTextNight">Good night!</string>
     <string name="Spb">Saint-Petersburg</string>
