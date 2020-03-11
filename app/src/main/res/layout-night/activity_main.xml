@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:adjustViewBounds="true"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
         android:cropToPadding="true"
 
         android:scaleType="fitStart"
@@ -44,34 +44,205 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="@dimen/layout_width"
-        android:layout_height="0dp"
-        android:orientation="vertical"
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="500sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="ScrollViewCount">
 
-        <TextView
-            android:id="@+id/textView4"
-            style="@style/RegularText"
-            android:text="@string/Day01"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <ImageView
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            app:srcCompat="@mipmap/ico_sun" />
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/RegularText"
+                    android:text="@string/Day01" />
 
-        <TextView
-            android:id="@+id/textView5"
-            style="@style/RegularText"
-            android:text="@string/Temp01"
-            android:textSize="30dp"
-            />
-    </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ico_sun" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/TemperatureText"
+                    android:text="@string/Temp01" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/RegularText"
+                    android:text="@string/Day02" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ico_sun" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/TemperatureText"
+                    android:text="@string/Temp02" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/RegularText"
+                    android:text="@string/Day03" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ico_sun" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/TemperatureText"
+                    android:text="@string/Temp03" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/RegularText"
+                    android:text="@string/Day04" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ico_sun" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/TemperatureText"
+                    android:text="@string/Temp04" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/RegularText"
+                    android:text="@string/Day05" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ico_sun" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/TemperatureText"
+                    android:text="@string/Temp05" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/RegularText"
+                    android:text="@string/Day06" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ico_sun" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/TemperatureText"
+                    android:text="@string/Temp06" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/RegularText"
+                    android:text="@string/Day07" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ico_sun" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/TemperatureText"
+                    android:text="@string/Temp07" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
