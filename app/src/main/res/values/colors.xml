@@ -6,5 +6,5 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorTextBasic">#3700B3</color>
     <color name="colorTextShadow">#ffffff</color>
-
+    <color name="colorBackground">#337777ff</color>
 </resources>
