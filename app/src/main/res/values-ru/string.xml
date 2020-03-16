@@ -12,4 +12,11 @@
     <string name="Day05">Пятница</string>
     <string name="Day06">Суббота</string>
     <string name="Day07">Воскресенье</string>
+    <string name="night_mode">Ночной режим</string>
+    <string name="temperature_c">Температура по Цельсию</string>
+    <string name="temperature_f">Температура по Фаренгейту</string>
+    <string name="pressure">Давление</string>
+    <string name="save">Сохранить настройки</string>
+    <string name="wind">Сила ветра</string>
+    <string name="water">Температура воды</string>
 </resources>

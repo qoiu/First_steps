@@ -19,4 +19,11 @@
     <string name="Temp06" translatable="false">+1</string>
     <string name="Temp07" translatable="false">-2</string>
     <string name="Temperature" translatable="false">+4</string>
+    <string name="night_mode">Night mode</string>
+    <string name="temperature_c">Temperature C°</string>
+    <string name="temperature_f">Temperature F°</string>
+    <string name="pressure">Pressure</string>
+    <string name="save">Save settings</string>
+    <string name="wind">Wind</string>
+    <string name="water">Water temperature</string>
 </resources>

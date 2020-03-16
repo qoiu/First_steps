@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.user_settings);
         getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_AUTO);
         Log.d(TAG,"Start");
     }
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Log.d(TAG,"Resume");
         System.out.println("Resume");
-        setTitle(R.string.Moscow);
+        //setTitle(R.string.Moscow);
 
     }
 

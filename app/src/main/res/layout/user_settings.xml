@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <Switch
+        style="@style/MyTextStyle"
+    android:id="@+id/switch1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/night_mode"
+    android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            style="@style/MyTextStyle"
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/temperature_c"
+            android:textSize="18sp" />
+
+        <RadioButton
+            style="@style/MyTextStyle"
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature_f"
+            android:textSize="18sp"/>
+
+
+
+    </RadioGroup>
+    <Switch
+        style="@style/MyTextStyle"
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pressure"
+        android:textSize="18sp"/>
+
+    <Switch
+        style="@style/MyTextStyle"
+        android:id="@+id/switch4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wind"
+        android:textSize="18sp"/>
+    <Switch
+        style="@style/MyTextStyle"
+        android:id="@+id/switch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/water"
+        android:textSize="18sp"/>
+    <Button
+        style="@style/MyTextStyle"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textSize="18sp"/>
+
+
+
+
+</LinearLayout>
