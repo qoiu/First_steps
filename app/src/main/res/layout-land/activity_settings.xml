@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchNightMode"
         style="@style/MyTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,18 +17,16 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioBtnCels"
             style="@style/MyTextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/temperature_c"
             android:textSize="18sp" />
-
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioBtnFahr"
             style="@style/MyTextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +35,7 @@
     </RadioGroup>
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/switchPressure"
         style="@style/MyTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +43,7 @@
         android:textSize="18sp" />
 
     <Switch
-        android:id="@+id/switch4"
+        android:id="@+id/switchWind"
         style="@style/MyTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,7 +51,7 @@
         android:textSize="18sp" />
 
     <Switch
-        android:id="@+id/switch3"
+        android:id="@+id/switchWaterTemp"
         style="@style/MyTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,7 +59,7 @@
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSaveSettings"
         style="@style/MyTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
