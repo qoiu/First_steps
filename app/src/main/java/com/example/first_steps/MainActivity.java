@@ -12,18 +12,18 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    Switch swNight;
-    Switch swPressure;
-    Switch swWind;
-    Switch swWaterTemp;
-    RadioButton rbCelsius;
-    RadioButton rbFahrenheit;
+    private Switch swNight;
+    private Switch swPressure;
+    private Switch swWind;
+    private Switch swWaterTemp;
+    private RadioButton rbCelsius;
+    private RadioButton rbFahrenheit;
     private final static String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_main);
         getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_AUTO);
         Log.d(TAG, "Start");
         Toast.makeText(getApplicationContext(), "onStart()", Toast.LENGTH_SHORT).show();
@@ -54,11 +54,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setElements() {
-        swNight.setChecked(Singletone.getInstance().isSettingNightMode());
-        swWind.setChecked(Singletone.getInstance().isSettingWnd());
-        swPressure.setChecked(Singletone.getInstance().isSettingPressure());
-        swWaterTemp.setChecked(Singletone.getInstance().isSettingWaterTemp());
-        rbCelsius.setChecked(Singletone.getInstance().isSettingInCels());
+        swNight.setChecked(Singleton.getInstance().isSettingNightMode());
+        swWind.setChecked(Singleton.getInstance().isSettingWnd());
+        swPressure.setChecked(Singleton.getInstance().isSettingPressure());
+        swWaterTemp.setChecked(Singleton.getInstance().isSettingWaterTemp());
+        rbCelsius.setChecked(Singleton.getInstance().isSettingInCelsius());
+        rbFahrenheit.setChecked(!Singleton.getInstance().isSettingInCelsius());
     }
 
     @Override
@@ -69,11 +70,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void saveElementsState() {
-        Singletone.getInstance().setSettingNightMode(swNight.isChecked());
-        Singletone.getInstance().setSettingPressure(swPressure.isChecked());
-        Singletone.getInstance().setSettingWnd(swWind.isChecked());
-        Singletone.getInstance().setSettingWaterTemp(swWaterTemp.isChecked());
-        Singletone.getInstance().setSettingInCels(rbCelsius.isChecked());
+        Singleton.getInstance().setSettingNightMode(swNight.isChecked());
+        Singleton.getInstance().setSettingPressure(swPressure.isChecked());
+        Singleton.getInstance().setSettingWnd(swWind.isChecked());
+        Singleton.getInstance().setSettingWaterTemp(swWaterTemp.isChecked());
+        Singleton.getInstance().setSettingInCelsius(rbCelsius.isChecked());
     }
     
     @Override
