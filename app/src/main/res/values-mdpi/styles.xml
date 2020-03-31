@@ -9,7 +9,7 @@
         <item name="android:shadowColor">@color/colorWhite</item>
     </style>
     <style name="MyTextStyle" parent="@style/TextAppearance.AppCompat.Large">
-        <item name="android:textSize">42sp</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:textColor">@color/colorTextBasic</item>
         <item name="android:typeface">monospace</item>
         <item name="android:shadowColor">@color/colorTextShadow</item>
@@ -18,18 +18,18 @@
         <item name="android:shadowRadius">3</item>
     </style>
     <style name="RegularText" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorTextBasic</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20sp</item>
+    </style>
+    <style name="TemperatureText" parent="@style/TextAppearance.AppCompat.Large">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/colorTextBasic</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">35dp</item>
-    </style>
-    <style name="TemperatureText" parent="@style/TextAppearance.AppCompat.Large">
-        <item name="android:textSize">32sp</item>
-        <item name="android:textColor">@color/colorTextBasic</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_height">28sp</item>
     </style>
 
 </resources>

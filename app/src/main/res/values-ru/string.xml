@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="HiText">Привет мир!</string>
+    <string name="HiTextNight">Спокойной ночи!</string>
+    <string name="Spb">Санкт-Петербург</string>
+    <string name="Moscow">Москва</string>
+    <string name="Day01">Понедельник</string>
+    <string name="Day02">Вторник</string>
+    <string name="Day03">Среда</string>
+    <string name="Day04">Четверг</string>
+    <string name="Day05">Пятница</string>
+    <string name="Day06">Суббота</string>
+    <string name="Day07">Воскресенье</string>
+    <string name="night_mode">Ночной режим</string>
+    <string name="temperature_c">Температура по Цельсию</string>
+    <string name="temperature_f">Температура по Фаренгейту</string>
+    <string name="pressure">Давление</string>
+    <string name="save">Сохранить настройки</string>
+    <string name="wind">Сила ветра</string>
+    <string name="water">Температура воды</string>
+</resources>

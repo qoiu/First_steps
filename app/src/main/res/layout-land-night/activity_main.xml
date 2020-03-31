@@ -11,10 +11,15 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="false"
         android:cropToPadding="false"
-        android:scaleType="fitCenter"
+        android:saveEnabled="false"
+        android:scaleType="centerCrop"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/sunny" />
@@ -24,7 +29,7 @@
         style="@style/MyTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:text="@string/Temperature"
         android:textSize="60sp"
@@ -36,19 +41,18 @@
         style="@style/MyTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:text="@string/Moscow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
-
     <HorizontalScrollView
         android:layout_width="wrap_content"
-        android:layout_height="500sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:background="@color/colorBackground"
         tools:ignore="ScrollViewCount">
 
         <LinearLayout
@@ -242,6 +246,8 @@
 
 
     </HorizontalScrollView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
